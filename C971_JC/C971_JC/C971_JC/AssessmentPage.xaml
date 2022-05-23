@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_JC.AssessmentPage"
+             Title="Assessments">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Assessments" FontSize="Title" TextColor="Black" HorizontalOptions="Center"/>
+            <ListView x:Name="assessmentView" IsPullToRefreshEnabled="True" Refreshing="assessmentView_Refreshing">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                                <StackLayout Orientation="Horizontal" Padding="10">
+                                    <Label Text="ID:"/>
+                                    <Label Text="{Binding AssessmentID}" x:Name="assessmentIdLabel"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                                    <Label Text="{Binding AssessmentName}"/>
+                                    <Label Text=":"/>
+                                    <Label Text="{Binding AssessmentStart}"/>
+                                    <Label Text="-"/>
+                                    <Label Text="{Binding AssessmentEnd}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Add Assessment" x:Name="addAssessmentButton" Clicked="addAssessmentButton_Clicked"/>
+            <Button Text="Delete Assessment" x:Name="deleteAssessmentButton" Clicked="deleteAssessmentButton_Clicked"/>
+            <Button Text="Edit Assessment" x:Name="editAssessmentButton" Clicked="editAssessmentButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
