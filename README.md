@@ -1,8 +1,7 @@
 <h1>Inventory Management System</h1>
 
 <h2>Description</h2>
-This project is a simple inventory management system that was part of my coursework at WGU. The app does everything in memory and doesn't implement a database. Users can add, delete and modify parts and products using the buttons beneath the respective tables. 
-Delete and Search functionalities are the exact same for both Products and Parts. The only exception being when a product has parts associated with it.
+This project was part of my coursework at Western Governors University. I was required to create a mobile app that met the requirements of the rubric and the following is the end product. The app uses a local SQLite database along with an ORM to create persistency in the application. Below a video walkthrough and screenshots of the application can be found.
 
   
 <br />
