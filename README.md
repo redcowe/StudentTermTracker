@@ -16,7 +16,7 @@ This project was part of my coursework at Western Governors University. I was re
 
 - <b>Windows 10</b>
 - <b>Xamarin Forms</b>
-- Android
+- <b>Android</b>
 
 <h2>Program Walk-Through</h2>
 
